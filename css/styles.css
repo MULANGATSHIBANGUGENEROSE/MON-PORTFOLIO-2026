@@ -111,7 +111,7 @@ a.active::after{
     margin-bottom: 1.2rem;
 
 }
-.hero a {
+.hero a{
     text-decoration: none;
     display: inline-block;
     background-color: var(--violet-doux);
@@ -133,7 +133,57 @@ a.active::after{
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
+}
+.apropos{
+    width: 800px;
+    margin: 6rem auto;
     text-align: center;
 }
+.apropos h2{
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+.apropos h2::after{
+    content:'' ;
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;
+}
+.apropos p{
+    margin-bottom: 2rem;
+    color: var(--gris-fonce);
+    font-size: 1.3rem;
+}
+
+.section{
+    width: 800px;
+    margin: 6rem auto;
+    text-align: center;
+}
+.section h2{
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+
+.section h2::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;
+}
+
+
 
 
