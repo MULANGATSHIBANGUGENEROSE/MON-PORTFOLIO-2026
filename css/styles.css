@@ -1,4 +1,4 @@
-:root{
+:root {
     --violet-doux: #6c63ff;
     --violet-fonce: #534edd;
     --orange-vif: #ffa726;
@@ -7,12 +7,14 @@
     --gris-tres-clair: #f8f8f8;
     --gris-claire: #eee;
 }
-*{
-    margin:0;
-    padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-header{
+
+header {
     background-color: white;
     box-shadow: 2px 6px 9px rgba(0,0,0,0.05);
     position: sticky;
@@ -23,19 +25,23 @@ header{
     align-items: center;
     padding: 2rem 3rem;   
 }
-header div a{
+
+header div a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--violet-doux);
 }
-ul li{
+
+ul {
+    display: flex;
+}
+
+ul li {
     list-style: none;
     margin-left: 25px;
 }
-ul{
-    display: flex;
-}
+
 ul li a {
     text-decoration: none;
     color: var(--gris-fonce);
@@ -44,10 +50,12 @@ ul li a {
     position: relative;
     padding: 10px 0;
 }
-ul li a:hover{
+
+ul li a:hover {
     color: var(--violet-doux);
 }
-ul li a::after{
+
+ul li a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -56,23 +64,23 @@ ul li a::after{
     width: 0%;
     background-color: var(--violet-fonce);
     transition: width 0.3s ease;
-
 }
-ul li a:hover::after{
+
+ul li a:hover::after, a.active::after {
     width: 100%;
 }
-body{
+
+body {
     background-color: var(--gris-tres-clair);
     font-family: Roboto, sans-serif;
     line-height: 1.6;
 }
-a.active{
+
+a.active {
     color: var(--violet-doux);
 }
-a.active::after{
-    width: 100%;
-}
-.hero{
+
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,37 +89,28 @@ a.active::after{
     margin: 10rem 2rem;
 }
 
-.hero img{
+.hero img {
     width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
     border: 8px solid var(--violet-doux);
-
 }
 
-.hero h1{
+.hero h1 {
     color: var(--violet-doux);
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
 }
 
-
-.hero h1{
-    color: var(--violet-doux);
-    font-size: 4rem;
-    font-weight:700;
-    margin-bottom: 1.2rem;
-}
-
-.hero p{
+.hero p {
     color: var(--gris-fonce);
     font-size: 1.3rem;
     margin-bottom: 1.2rem;
-
 }
-.hero a{
+
+.hero a {
     text-decoration: none;
     display: inline-block;
     background-color: var(--violet-doux);
@@ -122,32 +121,31 @@ a.active::after{
     letter-spacing: 1.1px;
     font-weight: 600;
     margin-top: 1rem;
-    transform: backgroud-color 0.3s ease,transform 0.2 ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
-.hero a:hover{
-    background-color: var(--violet-doux);
+
+.hero a:hover {
+    background-color: var(--violet-fonce);
     transform: translateY(-3px);
 }
-.hero h2{
-    color: var(--violet-doux);
-    font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 1.2rem;
-}
-.apropos{
+
+.apropos {
     width: 800px;
+    max-width: 90%;
     margin: 6rem auto;
     text-align: center;
 }
-.apropos h2{
+
+.apropos h2, section h2 {
     color: var(--violet-doux);
     font-size: 2.6rem;
     font-weight: 700;
     position: relative;
     text-align: center;
 }
-.apropos h2::after{
-    content:'' ;
+
+.apropos h2::after, section h2::after {
+    content: '';
     display: block;
     width: 60px;
     height: 4px;
@@ -155,90 +153,264 @@ a.active::after{
     margin: 1.2rem auto;
     border-radius: 2px;
 }
-.apropos p{
+
+.apropos p {
     margin-bottom: 2rem;
     color: var(--gris-fonce);
     font-size: 1.3rem;
 }
 
-
-section h2{
-    color:var(--violet-doux);
-    font-size: 2em;
-    font-weight: 700;
-    position: relative;
-    text-align: center;
-}
-
-.section h2::after{
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: var(--violet-doux);
-    margin: 1.2rem auto;
-    
-}
-
-.competences table{
+.competences table {
     width: 80%;
     margin: 0 auto;
     border-collapse: collapse;
     background-color: #FFF;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0. 08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     overflow: hidden;
-
-    
 }
 
-.competences table th, .competence table td{
+.competences table th, .competences table td {
     padding: 15px;
-
 }
-.competences table thead{
+
+.competences table thead {
     background-color: var(--violet-doux);
     color: #FFF;
     text-transform: uppercase;
 }
 
-.competences table tbody td{
+.competences table tbody td {
     border-bottom: 1px solid var(--gris-claire);
 }
-.competences table tbody tr:nth-child(even){
+
+.competences table tbody tr:nth-child(even) {
     background-color: #FDFDFD;
 }
-.competences table tbody tr{
+
+.competences table tbody tr {
     transition: background-color 0.3s ease;
 }
-.competences table tbody tr:hover{
+
+.competences table tbody tr:hover {
     background-color: #F0F0F0;
 }
-.competences table thead th{
+
+.competences table thead th {
     text-align: left;
 }
-footer{
+
+footer {
     margin-top: 3rem;
     background-color: var(--violet-doux);
     padding: 3rem 0;
     text-align: center;
 }
-footer p{
+
+footer p {
     color: white;
     margin-bottom: 1.2rem;
 }
-footer a{
+
+footer a {
     display: inline-block;
     font-size: 1.6rem;
     color: white;
     margin: 0 10px;
     transition: color 0.3s ease, transform 0.2s ease;
 }
-footer a:hover{
+
+footer a:hover {
     color: var(--orange-vif);
-    transform: translate(-3px);
+    transform: translateY(-3px);
 }
 
+/* Nouvelles pages (Projets, Contact, etc.) */
+.projets-container {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
 
+.projet-carte {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border-top: 4px solid var(--violet-doux);
+}
 
+.projet-carte:hover {
+    transform: translateY(-5px);
+}
 
+.projet-carte h3 {
+    color: var(--violet-fonce);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.projet-carte p {
+    color: var(--gris-fonce);
+    margin-bottom: 1.5rem;
+}
+
+.projet-carte a {
+    color: var(--orange-vif);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.projet-carte a:hover {
+    color: var(--violet-doux);
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 3rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--gris-claire);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.btn-submit {
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+}
+
+.btn-submit:hover {
+    background-color: var(--violet-fonce);
+    transform: translateY(-3px);
+}
+
+.contenu-centre {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.liste-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--orange-vif);
+    text-align: left;
+}
+
+.item h3 {
+    color: var(--violet-doux);
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.item p {
+    color: var(--gris-fonce);
+}
+
+/* =========================================
+   STYLE PAGE DIVERTISSEMENTS (Cartes avec Images)
+========================================= */
+
+.divertissements-grid {
+    display: grid;
+    /* La ligne ci-dessous rend la grille 100% responsive automatiquement ! */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.carte-divertissement {
+    background: white;
+    border-radius: 15px; /* Bords bien arrondis */
+    overflow: hidden; /* Empêche l'image de dépasser des bords arrondis */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Ombre douce et professionnelle */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.carte-divertissement:hover {
+    transform: translateY(-10px); /* Soulève la carte au survol */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Accentue l'ombre */
+}
+
+.carte-image {
+    width: 100%;
+    height: 220px; /* Hauteur fixe pour toutes les images */
+    overflow: hidden;
+}
+
+.carte-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image remplit l'espace sans se déformer */
+    transition: transform 0.5s ease; /* Animation fluide */
+}
+
+.carte-divertissement:hover .carte-image img {
+    transform: scale(1.1); /* Zoom léger sur l'image au survol */
+}
+
+.carte-contenu {
+    padding: 2rem 1.5rem;
+    flex-grow: 1; /* Permet à la carte de prendre toute la hauteur disponible */
+    border-top: 4px solid var(--orange-vif); /* Petite touche de couleur pour le dynamisme */
+}
+
+.carte-contenu h3 {
+    color: var(--violet-doux);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espace entre l'icône et le texte */
+}
+
+.carte-contenu p {
+    color: var(--gris-fonce);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}

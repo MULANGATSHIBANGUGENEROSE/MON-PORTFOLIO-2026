@@ -1,139 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Mon portfolio</title>
+    <title>Projets - Mon Portfolio</title>
 </head>
-
 <body>
     <header>
-
         <div>
-            <h3><a href="#">Mon portfolio</a></h3>
+            <h3><a href="index.html">Mon portfolio</a></h3>
         </div>
-
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html"class="active">Projets</a></li>
-                <li><a href="passions.html">passions</a></li>
-                <li><a href="divertissements.html">divertissement</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="divertissements.html">Divertissement</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
     </header>
+
     <main>
-         <section class="mes-projets">
-            <h2>Mes Réalisations</h2>
-            
-            <div>
-                
-                <div>
-                    <img src="img/mes-projets.jpg" alt="Site E-commerce">
-                    <h3>Site E-commerce</h3>
-                    <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                    </ul>
-                    <div>
-                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
-                    </div>
-                </div>
+        <section class="apropos">
+            <h2>Mes Projets</h2>
+            <p>Découvrez quelques-unes de mes réalisations récentes.</p>
+        </section>
 
-                <div>
-                    <img src="img/mes-projets.jpg" alt="Gestionnaire de Tâches">
-                    <h3>Gestionnaire de Tâches</h3>
-                    <p>Application web pour organiser ses projets quotidiens avec stockage local.</p>
-                    <ul>
-                        <li>Python</li>
-                        <li>Flask</li>
-                    </ul>
-                    <div>
-                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="img/mes-projets.jpg" alt="Blog Personnel">
-                    <h3>Blog Personnel</h3>
-                    <p>Projet en cours de migration vers Laravel pour apprendre le backend.</p>
-                    <ul>
-                        <li>PHP</li>
-                        <li>Laravel</li>
-                    </ul>
-                    <div>
-                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
-                        <span><i class="fa-regular fa-clock"></i> Bientôt</span>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="img/mes-projets.jpg" alt="Dashboard d'Analyse">
-                    <h3>Dashboard d'Analyse</h3>
-                    <p>Visualisation de données dynamiques avec Python et la bibliothèque Matplotlib.</p>
-                    <ul>
-                        <li>Python</li>
-                        <li>Data</li>
-                    </ul>
-                    <div>
-                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="img/mes-projetsjpg" alt="Application Météo">
-                    <h3>Application Météo</h3>
-                    <p>Une application utilisant une API en temps réel pour afficher la météo mondiale.</p>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>API</li>
-                    </ul>
-                    <div>
-                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="img/mes-projets.jpg" alt="Maquette Mobile UI">
-                    <h3>Maquette Mobile UI</h3>
-                    <p>Conception d'une interface utilisateur moderne pour une application de fitness.</p>
-                    <ul>
-                        <li>Figma</li>
-                        <li>Design</li>
-                    </ul>
-                    <div>
-                        <a href="#"><i class="fa-brands fa-figma"></i> Design</a>
-                        <a href="#"><i class="fa-solid fa-eye"></i> Aperçu</a>
-                    </div>
-                </div>
-
+        <section class="projets-container">
+            <div class="projet-carte">
+                <h3>Site E-commerce</h3>
+                <p>Création d'une interface de site e-commerce responsive en utilisant HTML, CSS et JavaScript.</p>
+                <a href="#">Voir le projet &rarr;</a>
+            </div>
+            <div class="projet-carte">
+                <h3>Application Météo</h3>
+                <p>Une application web qui affiche la météo en temps réel grâce à une API externe.</p>
+                <a href="#">Voir le projet &rarr;</a>
+            </div>
+            <div class="projet-carte">
+                <h3>Design Maquette Figma</h3>
+                <p>Conception complète de l'interface utilisateur d'une application de gestion de tâches.</p>
+                <a href="#">Voir le projet &rarr;</a>
             </div>
         </section>
     </main>
     
     <footer>
-       <p> &copy;2026 generose.tout droits reserves</p>
-        <div>
-            <p>
-                <a href="#"><i class="fa-brands fa-github"></i></a> 
-                <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>  
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            </p>   
-        </div>  
+        <p>&copy; 2026 Generose. Tous droits réservés.</p>
+        <p>
+            <a href="#"><i class="fa-brands fa-github"></i></a> 
+            <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>  
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </p>    
     </footer>
 </body>
 </html>

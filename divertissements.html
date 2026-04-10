@@ -1,49 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Mon portfolio</title>
+    <title>Divertissements - Mon Portfolio</title>
 </head>
-
 <body>
     <header>
-
         <div>
-            <h3><a href="#">Mon portfolio</a></h3>
+            <h3><a href="index.html">Mon portfolio</a></h3>
         </div>
-
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="projets.html">Projets</a></li>
-                <li><a href="passions.html">passions</a></li>
-                <li><a href="divertissements.html"class="active">divertissement</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="divertissements.html" class="active">Divertissement</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
-        <h1>Contactez-nous</h1>
+        <section class="apropos">
+            <h2>Mes Divertissements</h2>
+            <p>Comment je me détends et recharge mes batteries !</p>
+        </section>
+
+        <section class="contenu-centre">
+            <div class="divertissements-grid">
+                <div class="carte-divertissement">
+                    <div class="carte-image">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80" alt="Livre ouvert">
+                    </div>
+                    <div class="carte-contenu">
+                        <h3><i class="fa-solid fa-book"></i> Lecture</h3>
+                        <p>J'aime lire des livres sur la technologie, mais aussi de la science-fiction pour stimuler mon imagination.</p>
+                    </div>
+                </div>
+
+                <div class="carte-divertissement">
+                    <div class="carte-image">
+                        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80" alt="Casque audio et table de mixage">
+                    </div>
+                    <div class="carte-contenu">
+                        <h3><i class="fa-solid fa-music"></i> Musique</h3>
+                        <p>La musique m'accompagne toujours quand je code, elle m'aide à rester concentrée et productive.</p>
+                    </div>
+                </div>
+
+                <div class="carte-divertissement">
+                    <div class="carte-image">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Groupe d'étudiants travaillant ensemble">
+                    </div>
+                    <div class="carte-contenu">
+                        <h3><i class="fa-solid fa-users"></i> Travail en équipe</h3>
+                        <p>J'apprécie passer du temps avec mes amis ou mes collègues d'université pour brainstormer ou simplement échanger des idées.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
     <footer>
-       <p> &copy;2026 generose.tout droits reserves</p>
-        <div>
-            <p>
-                <a href="#"><i class="fa-brands fa-github"></i></a> 
-                <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>  
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            </p>   
-        </div>  
+        <p>&copy; 2026 Generose. Tous droits réservés.</p>
+        <p>
+            <a href="#"><i class="fa-brands fa-github"></i></a> 
+            <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>  
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </p>    
     </footer>
 </body>
 </html>
